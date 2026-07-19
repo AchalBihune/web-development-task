@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduLearn - Online Learning Platform</title>
+<link rel="stylesheet" href="Task6.css">
+</head>
+
+<body>
+
+<header>
+    <h2>EduLearn</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="themeBtn">🌙 Dark Mode</button>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Learn Skills for Your Future</h1>
+
+        <p>
+            Join thousands of students learning HTML, CSS,
+            JavaScript, Python and more.
+        </p>
+
+        <button id="startBtn">Start Learning</button>
+
+        <p id="welcome"></p>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700" alt="Learning">
+    </div>
+</section>
+
+<section id="courses">
+
+<h2 class="title">Popular Courses</h2>
+
+<div class="course-container">
+
+<div class="card">
+<h3>HTML</h3>
+<p>Learn webpage structure from scratch.</p>
+<button onclick="enroll('HTML')">Enroll</button>
+</div>
+
+<div class="card">
+<h3>CSS</h3>
+<p>Design beautiful responsive websites.</p>
+<button onclick="enroll('CSS')">Enroll</button>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+<p>Add interactivity to your websites.</p>
+<button onclick="enroll('JavaScript')">Enroll</button>
+</div>
+
+<div class="card">
+<h3>Python</h3>
+<p>Start coding using Python programming.</p>
+<button onclick="enroll('Python')">Enroll</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>Register Now</h2>
+
+<form id="registerForm">
+
+<input type="text" id="name" placeholder="Enter Name">
+
+<input type="email" id="email" placeholder="Enter Email">
+
+<select id="course">
+<option>Select Course</option>
+<option>HTML</option>
+<option>CSS</option>
+<option>JavaScript</option>
+<option>Python</option>
+</select>
+
+<button type="submit">Register</button>
+
+</form>
+
+<p id="message"></p>
+
+</section>
+
+<footer id="contact">
+<p>© 2025 EduLearn | Learn. Practice. Grow.</p>
+</footer>
+
+<script src="Task6.js"></script>
+
+</body>
+</html>
